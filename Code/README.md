@@ -4,7 +4,7 @@ This project provides a predictive model for selecting the most appropriate heal
 
 ## Phase 1 -
 First, identification of the doctors who can diagnose a patient is done. Second, probabilities are used to provide a ranking of each physician. Then the top physicians with higher probability to diagnose the patient are
-picked. 
+picked.
 
 ## Phase 2 -
 Integration with Practo is done. For each physician, the top five specialists in each field in the nearby location from Practo’s user are identified. These specialists are filtered through web scraping on Practo.
@@ -26,7 +26,10 @@ These models output a list of type of doctors (pediatrician, psychiatrist, etc.)
 
 ### Scraping/ 
 This folder contains logic for scraping Practo data, and saving it in a .csv file for further usage. 
- 
+
+### Sentimental Analysis/ 
+This folder contains code to calculate rating of the doctors by applying sentimental analysis on reviews given by patients that we have collected in comments list during scrapping.
+
 ### WebApp/ 
 This folder contains code for the web user interface built using **Flask**, which gives users access to the final output of phase 2 of the project.
 
