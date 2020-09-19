@@ -27,7 +27,7 @@ These models output a list of type of doctors (pediatrician, psychiatrist, etc.)
 ### Scraping/ 
 This folder contains logic for scraping Practo data, and saving it in a .csv file for further usage. 
 
-### Sentimental Analysis/ 
+### Sentimental_Analysis/ 
 This folder contains code to calculate rating of the doctors by applying sentimental analysis on reviews given by patients that we have collected in comments list during scrapping.
 
 ### WebApp/ 
