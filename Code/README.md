@@ -7,7 +7,7 @@ First, identification of the doctors who can diagnose a patient is done. Second,
 picked.
 
 ## Phase 2 -
-Integration with Practo is done. For each physician, the top five specialists in each field in the nearby location from Practo’s user are identified. These specialists are filtered through web scraping on Practo.
+Integration with [Practo](https://www.practo.com/) is done. For each physician, the top five specialists in each field in the nearby location from Practo’s user are identified. These specialists are filtered through web scraping on Practo.
 These specialists are ranked using sentimental analysis on the reviews from the patients who previously visited them. Then the construction of a basic user interface to suggest select Practo specialists based on the results is done.
 
 *The base data set used can be found [here](https://health.data.ny.gov/api/views/rmwa-zns4/rows.csv?accessType=DOWNLOAD).*
@@ -37,9 +37,9 @@ This folder contains code for the web user interface built using **Flask**, whic
 ### Generating data for running the web interface -
 For the code in *Model/*, execute *predictive_models.ipynb* in any python notebook and modify the google drive paths as needed.
  
-Now, run *profile_scraper.py*, and it’ll save doctors’ profile in doctors.csv. You can change user’s location in *line 7* of code. Doctors’ data needed is compiled from [Practo](https://www.practo.com/) 
+Now, run *profile_scraper.py*, and it’ll save doctors’ profile in doctors.csv. You can change user’s location in *line 7* of code. Doctors’ data needed is compiled from [Practo](https://www.practo.com/). 
 
-Classes in HTML pages of [Practo](https://www.practo.com/) may change. So, correct those after inspecting the elements in a profile.
+Classes in HTML pages of Practo may change. So, correct those after inspecting the elements in a profile.
 
 *Example: name = soup_new.find(class_="c-profile__title u-bold u-d-inlineblock")*
 >$ python profile_scraper.py
