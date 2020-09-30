@@ -3,7 +3,7 @@ Major Project Under the guidance of [Ananthanarayana V. S.](http://infotech.nitk
 
 [Data Set](https://health.data.ny.gov/api/views/rmwa-zns4/rows.csv?accessType=DOWNLOAD)
 
-```Note: All modules contains their own ReadMe.md and requirnments.txt file.```
+```Note: All modules contains their own readMe.md and requirnments.txt file.```
 # Project Team:
 
 [Bharat Sharma](https://github.com/GENU05)
